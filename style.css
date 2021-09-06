@@ -78,6 +78,24 @@ header{
 
 /* Nav */
 
+#btn-mobile{
+    display: none;
+}
+
+@media (max-width: 600px){
+    #btn-mobile{
+        display: block;
+    }
+
+    #menu{
+        display: none;
+    }
+
+    #nav.active #menu{
+        display: flex;
+    }
+}
+
 nav{
     background-color: #212bbd;
 }
@@ -91,7 +109,7 @@ nav{
 }
 
 .img-nav img{
-    width: 200px;
+    width: 150px;
 }
 
 .nav-nav ul{
@@ -101,7 +119,7 @@ nav{
 
 .nav-nav ul li a{
     padding: 20px;
-    font-size: 40px;
+    font-size: 25px;
     color: white;
 }
 
@@ -227,4 +245,42 @@ nav{
 .flex-redes-sociais-footer{
     display: flex;
     justify-content: space-around;
+}
+
+/* @Media's */
+
+@media (max-width: 1680px){
+    header .container{
+        width: 90%;
+    }
+}
+
+@media (max-width: 1440px){
+    header .container{
+        width: 95%;
+    }
+}
+
+@media (max-width: 1360px){
+    header .container{
+        width: 100%;
+    }
+
+    header span{
+        padding: 0 10px;
+    }
+
+    .tell-cianorte i{
+        padding-left: 10px;
+    }
+
+    header span, i{
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 1000px){
+    header .container{
+        width: 95%;
+    }
 }
